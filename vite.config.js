@@ -8,5 +8,5 @@ export default defineConfig({
     host : true,
     port : 4000
   },
-  base: "/BingeMate-V1/"
+  base: "/"
 })
