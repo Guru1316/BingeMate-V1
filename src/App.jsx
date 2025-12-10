@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
@@ -18,7 +18,6 @@ function App() {
   const { theme } = useTheme();
 
   return (
-    <Router>
       <div className="app" data-theme={theme}>
         <Header />
         <main className="main-content">
@@ -35,7 +34,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
   );
 }
 
