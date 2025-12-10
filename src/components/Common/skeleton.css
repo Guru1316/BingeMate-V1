@@ -1,0 +1,83 @@
+/* src/components/Common/skeleton.css */
+.skeleton {
+  background: linear-gradient(90deg, var(--secondary-bg) 25%, var(--tertiary-bg) 50%, var(--secondary-bg) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skeleton-card {
+  height: 300px;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton-text {
+  height: 20px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.skeleton-title {
+  height: 32px;
+  width: 200px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.skeleton-image {
+  height: 200px;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skeleton-row .skeleton-circle {
+  flex-shrink: 0;
+}
+
+.skeleton-row .skeleton-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .skeleton-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skeleton-card {
+    height: 200px;
+  }
+  
+  .skeleton-text {
+    height: 16px;
+  }
+}

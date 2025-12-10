@@ -1,0 +1,374 @@
+/* src/pages/comingSoon.css */
+.coming-soon-page {
+  padding: 20px 0;
+}
+
+.coming-soon-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-text);
+}
+
+.page-title svg {
+  color: var(--accent-color);
+}
+
+.page-subtitle {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.countdown-section {
+  margin-bottom: 3rem;
+}
+
+.countdown-card {
+  background: linear-gradient(135deg, var(--accent-color), #ff6b6b);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(229, 9, 20, 0.3);
+}
+
+.countdown-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.next-release {
+  padding: 1rem;
+}
+
+.next-release h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.release-date {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.25rem;
+}
+
+.countdown-label {
+  opacity: 0.9;
+}
+
+.countdown-value {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-md);
+}
+
+.upcoming-series {
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.75rem;
+  color: var(--primary-text);
+}
+
+.status-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.legend-item.completed {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.legend-item.post-production {
+  background-color: #46d369;
+  color: white;
+}
+
+.legend-item.filming {
+  background-color: #ffa00a;
+  color: white;
+}
+
+.legend-item.production {
+  background-color: #2196f3;
+  color: white;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.upcoming-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--border-color);
+}
+
+.upcoming-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px var(--shadow-color);
+}
+
+.upcoming-card-image {
+  position: relative;
+  height: 200px;
+}
+
+.upcoming-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upcoming-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.upcoming-card-content {
+  padding: 1.5rem;
+}
+
+.upcoming-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--primary-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.upcoming-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+.upcoming-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.upcoming-overview {
+  color: var(--secondary-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.upcoming-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.reminder-btn {
+  flex: 1;
+}
+
+.calendar-section {
+  background-color: var(--secondary-bg);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+}
+
+.calendar-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-text);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.calendar-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+
+.calendar-card:hover {
+  border-color: var(--accent-color);
+  transform: translateX(4px);
+}
+
+.calendar-date {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.calendar-info {
+  flex: 1;
+}
+
+.calendar-info h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  color: var(--primary-text);
+}
+
+.calendar-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.coming-soon-skeleton {
+  padding-top: 2rem;
+}
+
+.upcoming-grid-skeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .upcoming-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .status-legend {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .countdown-card {
+    padding: 1.5rem;
+  }
+  
+  .next-release h4 {
+    font-size: 1.5rem;
+  }
+  
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .upcoming-card-image {
+    height: 180px;
+  }
+  
+  .calendar-section {
+    padding: 1.5rem;
+  }
+}
