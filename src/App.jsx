@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
